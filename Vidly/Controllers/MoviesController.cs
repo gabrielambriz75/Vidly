@@ -27,6 +27,7 @@ namespace Vidly.Controllers
                 Customers = customers
             };
 
+           
             return View(viewModel);
         }
 
