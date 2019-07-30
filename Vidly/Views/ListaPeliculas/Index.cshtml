@@ -1,9 +1,32 @@
-﻿@model Vidly.Models.Movie
+﻿
+@model IEnumerable<Vidly.Models.Movie>
+
 @{
-    ViewBag.Title = "Lista";
+    ViewBag.Title = "Peliculas";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <table>
-        <tr>@Model.Name</tr>
 
-    </table>
+<h2>Peliculas</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+    @foreach (var pelicula in Model)
+    {
+
+
+        <tbody>
+        <tr>
+            <td>@pelicula.Id</td>
+
+            <td>
+                @pelicula.Name
+            </td>
+        </tr>
+        </tbody>
+    }
+</table>

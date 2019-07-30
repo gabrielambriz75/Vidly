@@ -8,12 +8,27 @@ namespace Vidly.Peliculas
 {
     public class ListaPeliculas
     {
-        public Movie ObtenerPeliculas()
+        public List<Movie> ObtenerPeliculas()
         {
-            return new Movie()
+            var pelicula1 = new Movie()
             {
-                Name = "Avengers EndGame"
+                Id =  1,
+                Name = "IT Chapter 2"
             };
+
+            var pelicula2 = new Movie()
+            {
+                Id = 2,
+                Name = "Avengers End Game"
+            };
+            var pelicula3 = new Movie()
+            {
+                Id = 3,
+                Name = "Matrix"
+            };
+            
+            return new List<Movie>{ pelicula1, pelicula2, pelicula3};
+
         }
     }
 }
