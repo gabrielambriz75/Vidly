@@ -1,0 +1,28 @@
+﻿@model List<Vidly.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+   
+        @foreach (var cliente in Model)
+        {
+            <tbody>
+            <td>
+                @cliente.Id
+            </td>
+            <td>
+                @cliente.Name
+            </td>
+            </tbody>
+        }
+    
+</table>
