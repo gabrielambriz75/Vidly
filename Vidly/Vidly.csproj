@@ -285,6 +285,7 @@
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\ListaPeliculas\Index.cshtml" />
     <Content Include="Views\ListaClientes\Index.cshtml" />
+    <Content Include="Views\ListaClientes\Detalle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

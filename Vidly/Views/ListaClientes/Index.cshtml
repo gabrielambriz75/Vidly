@@ -7,22 +7,21 @@
 <h2>Customers</h2>
 <table class="table">
     <thead>
-    <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-    </tr>
+        <tr>
+
+            <th>
+                <h2>Nombre</h2>
+            </th>
+        </tr>
     </thead>
-   
-        @foreach (var cliente in Model)
-        {
-            <tbody>
-            <td>
-                @cliente.Id
-            </td>
-            <td>
-                @cliente.Name
-            </td>
-            </tbody>
-        }
+
+    @foreach (var cliente in Model)
+    {
+        <tbody>
+        <tr>
+            <td>@Html.ActionLink(cliente.Name,"Detalle","ListaClientes",new { id = cliente.Id },null)</td>
+        </tr>
+        </tbody>
+    }
     
 </table>
