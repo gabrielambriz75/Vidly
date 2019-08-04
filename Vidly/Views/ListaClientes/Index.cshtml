@@ -5,6 +5,8 @@
 }
 
 <h2>Customers</h2>
+
+
 <table class="table">
     <thead>
         <tr>
@@ -15,13 +17,19 @@
         </tr>
     </thead>
 
+
+
     @foreach (var cliente in Model)
     {
         <tbody>
-        <tr>
-            <td>@Html.ActionLink(cliente.Name,"Detalle","ListaClientes",new { id = cliente.Id },null)</td>
-        </tr>
+            <tr>
+                <td>@Html.ActionLink(cliente.Name, "Detalle", "ListaClientes", new { id = cliente.Id }, null)</td>
+            </tr>
         </tbody>
     }
-    
+
 </table>
+@if (!Model.Any())
+{
+    <h3>No se encontraron clientes</h3>
+}

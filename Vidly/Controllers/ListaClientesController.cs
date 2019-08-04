@@ -15,18 +15,20 @@ namespace Vidly.Controllers
         {
             var listaClientes = new ListaClientes();
             var model = listaClientes.ObtenerClientes();
-            return View(model);
 
-            
+            return View(model);
 
         }
 
         public ActionResult Detalle(int id)
         {
             var listaCliente = new ListaClientes();
+            
             var cliente = listaCliente.ObtenerClientes().SingleOrDefault(c => c.Id == id);
-
-            return View(cliente);
+           
+                return View(cliente);
+            
+          
         }
 
         

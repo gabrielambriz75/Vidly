@@ -9,18 +9,18 @@ namespace Vidly.Clientes
     {
         public List<Customer> ObtenerClientes()
         {
-          var usuario1 = new Customer()
+            var usuario1 = new Customer()
             {
-                Id =1,
+                Id = 1,
                 Name = "Gabriel Ambriz"
             };
 
-           var usuriario2 = new Customer()
-            {   
+            var usuriario2 = new Customer()
+            {
                 Id = 2,
                 Name = "Angel Dominguez"
             };
-           return new List<Customer>{usuario1,usuriario2};
+            return new List<Customer>{usuario1,usuriario2};
            
         }
     }
