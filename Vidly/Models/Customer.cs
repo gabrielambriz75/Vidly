@@ -7,7 +7,11 @@ namespace Vidly.Models
 {
     public class Customer
     {
-       public int Id{ get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
+        public bool IsSuscribedToNewsletter { get; set; }
+        public MembershipType MembershipType { get; set; }
+
+        public byte MembershipTypeId { get; set; }
     }
 }
