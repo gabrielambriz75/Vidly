@@ -4,27 +4,37 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
-using Vidly.Clientes;
+
 
 namespace Vidly.Controllers
 {
     public class ListaClientesController : Controller
     {
         // GET: Movies/Random
+        private ApplicationDbContext _context;
+        public ListaClientesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
         public ViewResult Index()
         {
-            var listaClientes = new ListaClientes();
-            var model = listaClientes.ObtenerClientes();
+           
+            var customers = _context.Customers.ToList();
 
-            return View(model);
+            return View(customers);
 
         }
 
         public ActionResult Detalle(int id)
         {
-            var listaCliente = new ListaClientes();
+         
             
-            var cliente = listaCliente.ObtenerClientes().SingleOrDefault(c => c.Id == id);
+            var cliente = _context.Customers.SingleOrDefault(c => c.Id == id);
            
                 return View(cliente);
             
