@@ -1,4 +1,5 @@
 ﻿@model Vidly.Models.Customer
+
 @{
     ViewBag.Title = @Model;
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,3 +8,9 @@
 <h2>Detalle</h2>
 <h3>@Model.Name</h3>
 
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @*Editar esta parte para que muestre vacio en caso de no contener el cumpleaños*@
+    <li>Birthday: @Model.Birthday</li>
+
+</ul>

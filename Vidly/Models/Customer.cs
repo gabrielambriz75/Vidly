@@ -16,5 +16,9 @@ namespace Vidly.Models
         public MembershipType MembershipType { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        
+        [StringLength(255)]
+        public string Birthday { get; set; }
     }
 }

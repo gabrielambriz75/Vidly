@@ -31,13 +31,13 @@ namespace Vidly.Controllers
 
         }
 
-        public ActionResult Detalle(int id)
+        public ViewResult Detalle(int id)
         {
          
             
-            var cliente = _context.Customers.SingleOrDefault(c => c.Id == id);
+            var cliente = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
            
-                return View(cliente);
+            return View(cliente);
             
           
         }
