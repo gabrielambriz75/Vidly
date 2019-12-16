@@ -17,8 +17,6 @@ namespace Vidly.Models
 
         public byte MembershipTypeId { get; set; }
 
-        
-        [StringLength(255)]
-        public string Birthday { get; set; }
+        public DateTime? Birthday { get; set; }
     }
 }

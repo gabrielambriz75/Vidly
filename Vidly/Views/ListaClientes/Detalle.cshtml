@@ -10,7 +10,9 @@
 
 <ul>
     <li>Membership Type: @Model.MembershipType.Name</li>
-    @*Editar esta parte para que muestre vacio en caso de no contener el cumpleaños*@
-    <li>Birthday: @Model.Birthday</li>
+   
 
+    @if (Model.Birthday.HasValue) { 
+    <li>Birthday: @Model.Birthday</li>
+    }
 </ul>

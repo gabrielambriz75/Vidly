@@ -11,8 +11,8 @@
 <table class="table">
     <thead >
     <tr>
-        <th>Id</th>
-        <th>Nombre</th>
+        <th>Movie</th>
+        <th>Genre</th>
     </tr>
     </thead>
     @foreach (var pelicula in Model)
@@ -21,11 +21,14 @@
 
         <tbody>
         <tr>
-            <td>@pelicula.Id</td>
+            <td>@Html.ActionLink(pelicula.Name,"Detalle","ListaPeliculas",new {id = pelicula.Id },null)</td>
 
             <td>
-                @pelicula.Name
+                @pelicula.Genre
             </td>
+           
+
+
         </tr>
         </tbody>
     }

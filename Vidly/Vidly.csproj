@@ -204,6 +204,18 @@
     <Compile Include="Migrations\201912100706191_AddBirthdayCustomer.designer.cs">
       <DependentUpon>201912100706191_AddBirthdayCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912130614027_NullBirthdayOnCustomer.cs" />
+    <Compile Include="Migrations\201912130614027_NullBirthdayOnCustomer.designer.cs">
+      <DependentUpon>201912130614027_NullBirthdayOnCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912141823068_NewPropertiesToMovies.cs" />
+    <Compile Include="Migrations\201912141823068_NewPropertiesToMovies.designer.cs">
+      <DependentUpon>201912141823068_NewPropertiesToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912141846203_AddingNewMovies.cs" />
+    <Compile Include="Migrations\201912141846203_AddingNewMovies.designer.cs">
+      <DependentUpon>201912141846203_AddingNewMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -211,7 +223,6 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
-    <Compile Include="Peliculas\ListaPeliculas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -384,6 +395,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ListaPeliculas\Detalle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -417,6 +429,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912100706191_AddBirthdayCustomer.resx">
       <DependentUpon>201912100706191_AddBirthdayCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912130614027_NullBirthdayOnCustomer.resx">
+      <DependentUpon>201912130614027_NullBirthdayOnCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912141823068_NewPropertiesToMovies.resx">
+      <DependentUpon>201912141823068_NewPropertiesToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912141846203_AddingNewMovies.resx">
+      <DependentUpon>201912141846203_AddingNewMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
