@@ -33,5 +33,12 @@ namespace Vidly.Controllers
             var movie = _context.Movies.FirstOrDefault(c => c.Id == id);
             return View(movie);
         }
+
+
+
+
+
+
+
     }
 }
