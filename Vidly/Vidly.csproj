@@ -224,6 +224,18 @@
     <Compile Include="Migrations\201912220120583_TabelGenreNew.designer.cs">
       <DependentUpon>201912220120583_TabelGenreNew.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912230611134_NullDateAddedAndRealeaseDate.cs" />
+    <Compile Include="Migrations\201912230611134_NullDateAddedAndRealeaseDate.designer.cs">
+      <DependentUpon>201912230611134_NullDateAddedAndRealeaseDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912230645072_ChangeNamePropertiesMovie.cs" />
+    <Compile Include="Migrations\201912230645072_ChangeNamePropertiesMovie.designer.cs">
+      <DependentUpon>201912230645072_ChangeNamePropertiesMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912230648438_Test.cs" />
+    <Compile Include="Migrations\201912230648438_Test.designer.cs">
+      <DependentUpon>201912230648438_Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -235,6 +247,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -407,7 +420,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\ListaPeliculas\Detalle.cshtml" />
     <Content Include="Views\ListaClientes\CustomerForm.cshtml" />
-    <Content Include="Views\ListaPeliculas\MovieForm.cshtml" />
+    <Content Include="Views\ListaPeliculas\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -456,6 +469,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912220120583_TabelGenreNew.resx">
       <DependentUpon>201912220120583_TabelGenreNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912230611134_NullDateAddedAndRealeaseDate.resx">
+      <DependentUpon>201912230611134_NullDateAddedAndRealeaseDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912230645072_ChangeNamePropertiesMovie.resx">
+      <DependentUpon>201912230645072_ChangeNamePropertiesMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912230648438_Test.resx">
+      <DependentUpon>201912230648438_Test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

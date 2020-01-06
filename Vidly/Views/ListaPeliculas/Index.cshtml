@@ -8,6 +8,7 @@
 
 <h2>Peliculas</h2>
 
+@Html.ActionLink("New","New",null,new {@class = "btn btn-primary btn-large" } )
 <table class="table">
     <thead >
     <tr>
@@ -21,12 +22,10 @@
 
         <tbody>
         <tr>
-            <td>@Html.ActionLink(pelicula.Name,"Detalle","ListaPeliculas",new {id = pelicula.Id },null)</td>
+            <td>@Html.ActionLink(pelicula.Name,"Edit","ListaPeliculas",new {id = pelicula.Id },null)</td>
 
-            <td>
-                @pelicula.Genre
-            </td>
            
+            <td>@pelicula.GenreType.Name</td>
 
 
         </tr>
