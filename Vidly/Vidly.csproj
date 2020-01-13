@@ -176,6 +176,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911180240118_RequiredProperties.cs" />
+    <Compile Include="Migrations\201911180240118_RequiredProperties.designer.cs">
+      <DependentUpon>201911180240118_RequiredProperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201912020510440_InitialModel.cs" />
     <Compile Include="Migrations\201912020510440_InitialModel.designer.cs">
       <DependentUpon>201912020510440_InitialModel.cs</DependentUpon>
@@ -235,6 +239,10 @@
     <Compile Include="Migrations\201912230648438_Test.cs" />
     <Compile Include="Migrations\201912230648438_Test.designer.cs">
       <DependentUpon>201912230648438_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001130434249_NewPropertiesMovie.cs" />
+    <Compile Include="Migrations\202001130434249_NewPropertiesMovie.designer.cs">
+      <DependentUpon>202001130434249_NewPropertiesMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -435,6 +443,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911180240118_RequiredProperties.resx">
+      <DependentUpon>201911180240118_RequiredProperties.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912020510440_InitialModel.resx">
       <DependentUpon>201912020510440_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912230648438_Test.resx">
       <DependentUpon>201912230648438_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001130434249_NewPropertiesMovie.resx">
+      <DependentUpon>202001130434249_NewPropertiesMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
