@@ -9,31 +9,32 @@
 @using (Html.BeginForm("Save", "ListaPeliculas"))
 {
     <div class="form-group">
-        @Html.LabelFor(x => x.movie.Name)
-        @Html.TextBoxFor(x => x.movie.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(x => x.movie.Name)
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x =>x.Name)
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(x => x.movie.ReleaseDate)
-        @Html.TextBoxFor(x => x.movie.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control" })
-        @Html.ValidationMessageFor(x => x.movie.ReleaseDate)
+        @Html.LabelFor(x => x.ReleaseDate)
+        @Html.TextBoxFor(x => x.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.ReleaseDate)
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(x => x.movie.GenreTypeId)
-        @Html.DropDownListFor(x => x.movie.GenreTypeId, new SelectList(Model.GenreTypes, "Id", "Name"), "Select Genre Type", new { @class = "form-control" })
-        @Html.ValidationMessageFor(x => x.movie.GenreTypeId)
+        @Html.LabelFor(x => x.GenreTypeId)
+        @Html.DropDownListFor(x => x.GenreTypeId, new SelectList(Model.GenreTypes, "Id", "Name"), "Select Genre Type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.GenreTypeId)
     </div>
 
 
     <div class="form-group">
-        @Html.LabelFor(x => x.movie.NumberStock)
-        @Html.TextBoxFor(x => x.movie.NumberStock, new { @class = "form-control" })
-        @Html.ValidationMessageFor(x => x.movie.NumberStock)
+        @Html.LabelFor(x => x.NumberStock)
+        @Html.TextBoxFor(x => x.NumberStock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.NumberStock)
     </div>
 
-    @Html.HiddenFor(x => x.movie.Id);
+   
+    @Html.HiddenFor(x =>x.Id);
     @Html.AntiForgeryToken();
 
     <button type="submit" class="btn btn-primary">Save</button>
