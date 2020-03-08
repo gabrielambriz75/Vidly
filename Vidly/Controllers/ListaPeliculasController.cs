@@ -22,11 +22,15 @@ namespace Vidly.Controllers
         {
             _context.Dispose();
         }
-        public ActionResult Index()
+        
+        [Authorize(Roles = RoleName.CanManageMovies)]
+        public ViewResult Index()
         {
-            var movie = _context.Movies.Include(x => x.GenreType).ToList();
-
-            return View(movie);
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("List");
+            //var movie = _context.Movies.Include(x => x.GenreType).ToList();
+            else
+                return View("ReadOnlyList");
         }
 
         //public ViewResult Detalle(int id)
